@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-30T15:52:39 IST" name="Suite" finished-at="2021-08-30T15:53:54 IST" duration-ms="75091">
+    <groups>
+    </groups>
+    <test started-at="2021-08-30T15:52:39 IST" name="Test" finished-at="2021-08-30T15:53:54 IST" duration-ms="75091">
+      <class name="runner.homepageTest">
+        <test-method signature="hpnavigation()[pri:0, instance:runner.homepageTest@38ba6ce3]" started-at="2021-08-30T15:52:39 IST" name="hpnavigation" finished-at="2021-08-30T15:53:26 IST" duration-ms="47083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hpnavigation -->
+      </class> <!-- runner.homepageTest -->
+      <class name="runner.FlightsPageTest">
+        <test-method signature="fpNavigation()[pri:1, instance:runner.FlightsPageTest@1bd39d3c]" started-at="2021-08-30T15:53:26 IST" name="fpNavigation" finished-at="2021-08-30T15:53:54 IST" duration-ms="27967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fpNavigation -->
+      </class> <!-- runner.FlightsPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

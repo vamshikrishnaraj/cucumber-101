@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Properties>
+<Property name="basePath">./logs</Property>
+</Properties>
+  <Appenders>
+  <RollingFile name="File" filename = "${basePath}/prints.log" filepattern="${basePath}/prints-%d{yyyy-MM-dd}.Log">
+  <PatternLayout pattern="%d{HH.mm.ss.SSS} [%t]  %-5level %logger{36} - %msg%n"/>
+  <SizeBasedTriggeringPolicy size="500" /><!-- with this we have specified that once the file size of 500 kb completes, we create a new file name with time stamp in its name -->
+  </RollingFile>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+ 
+    <Root level="trace"><!-- if the level = "trace then the entire logging will be activated,including the info and the debugging" -->
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+</Configuration>
